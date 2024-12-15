@@ -1,8 +1,6 @@
 # Is it Worth it to Fire Your Coach in the NFL?
 Final Project for Professor Schueller's Intro to Data Science Class
 
-
-
 ## Group Members
 Nik Greb, Matt Mascavage, Owen Kim
 
@@ -56,30 +54,34 @@ The bulk of the time dedicated to this project went into finding the data that w
 
 ![Image 1](images/DataScienceImage1.png)
 
+The scatter plot above is plotting each team’s total win percentage for each team on the y-axis, with the number of different coaches for each team on the x-axis. The correlation coefficient of -0.758 is showing a strong negative correlation between the two variables; when a team has more coaches, their total win percentage is lower compared to a team with less coaches. Clearly, teams that do not fire their coach as often tend to have more wins, as shown by our linear regression. But do the teams who do fire their coach actually get better following the firing? One way to answer this is by examining win totals of the coach's final seasons with a team compared to win totals in the coach's first seasons with teams. We do this in the following histograms and boxplots:
+
+![Image 2](images/DataScienceImage2.png)
+
+From these visualizations, we see that, although not guaranteed, teams generally improve in the season after the hiring of a new coach. The mean win percentage for new coaches rose by roughly 10% and even visually you can see the change in the distribution from the histograms. The box plots show that there is a wider range of win percentages among new coaches, but the range extends only in the positive direction compared to previous coaches. In summary, it is common, but not guaranteed, for a team’s win percentage to increase after the hiring of a new coach. This made us wonder what these values would look like for midseason firings, which usually happen in response to a bad start to the season. 
+
+Now we filter the dataframe for only the years in which a team fired their coach in the middle of a season and plot those histograms and calculate their means to determine if there’s a difference in team performance in the middle of a single season by firing their coach, with most other characteristics (i.e. roster composition, assistant coaches, payroll, etc.) held roughly constant during the course of a single season.
+
+![Image 3](images/DataScienceImage3.png)
+
+In the new Coach distribution, there are two coaches that coached exactly one game and each won that game. We removed those observations from the filtered observations and considered them outliers, the updated visualization is shown below.
+
+![Image 4](images/DataScienceImage4.png)
+
+For these visualizations above, the data is only including teams and years when there was a midseason firing. Teams / years without a midseason firing are not included in this dataset. This data set is reduced from 746 observations to just 42. From these visualizations above, we can see that a team's win percentage increases, in most cases, when a team fires their coach in the middle of the season. We can see that in the red graphs, the data is grouped in the lower win percentage range, which makes sense because typically teams will fire their coach when the team is performing poorly, with the hopes that the team improves with a coaching switch. Whereas in the blue graphs, the range of win percentages is much more varied, but only in the positive direction. 
+Another measurement of a team’s performance is point differential (points scored - points against). This gives a more complete picture of how a team’s wins and losses actually played out. 
+
+![Image 5](images/DataScienceImage5.png)
+
+We can see, once again, that performance improves after the hiring of a new coach. There is an increase of roughly 30 in the mean point differential for teams after hiring a new coach. Ultimately, this leads to the findings below and helps us answer our question of, “Does firing a coach and hiring a new one boost the team’s performance?”
 
 
+### Conclusion
 
-Put the contents of your report from Part II.
-Export visualizations from your colab worksheet and embed them in the appropriate locations in your report.
+Does firing a coach and hiring a new one boost the team’s performance? Is it “worth it?” Yes, in most cases, it is worth it. Teams typically fire their coach when they are performing poorly, hoping that a coaching switch can change the trajectory of their team. From all of the graphs above that are showing a teams win percentage before and after a firing, we can see that teams have a lower win percentage before they fire their coach (regardless of if they fired their coach at the end of the season or in the middle of the season) than they do after they fire their coach. In other words, in most cases, teams improve after they fire their coach, regardless of when the firing occurred. How do teams who change head coaches often compare in performance to teams that keep the same coach for a long period of time?
+From the first graph above in the “Methods and Results” section, showing win percentage on the y-axis and number of head coach switches on the x-axis, we can see that teams with more head coach switches have a lower win percentage than teams with less head coach switches. The correlation coefficient of -0.758 tells us that there is a strong negative correlation between the two variables, when a team has more coaches, their total win percentage is lower compared to a team with less coaches. The patriots, who have only had one coaching switch between 2002 and 2023 have the highest total win percentage in this timeline. Whereas the raiders, who have had 13 different coaches between the same timeline, have the lowest total win percentage in the same timeline. Ultimately, teams who fire their coach more often perform worse than teams who do not change their coach as often. 
 
+There are a number of limitations to our analysis. For starters, we solely analyzed wins and points through our data, but there are a lot of other factors that contribute to a team’s success, particularly on the defensive side. Turnovers, and defensive stops, and passing yards are all crucial to a team’s performance, but our analysis really only captures the defensive side of the story in the “Point Differential” column. Additionally, our measures of team performance are all relative to the performance of other teams. If one team’s performance was constant, but the teams it played worsened the next season, it would seem like a coaching change actually improved performance when in reality this was due to the other factors. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+This study could be pushed further to analyze if it is worth it to fire your coach midway through the season in other sports. It would have to be with similar sports to football, where the coach actually has an impact on the performance of their team. Another sport where this study could potentially be used is soccer and basketball because both sports are similar to football in that they require strategic planning and certain adjustments before every game, depending on your opponent. Could also look at college football midseason firings. It would also be interesting to look at the following questions, which could likely be done with this dataset, maybe with some slight modifications: How often do teams with midseason firings make the playoffs, and how does this compare to teams with an end of season firing? How does a midseason firing impact future performance vs firing at the end of a season? Do teams with midseason firings or end of season firings typically do better in the following season (only the coaches who were newly hired, which did better in their first full season, a midseason fire or a fire after the season)?
 
