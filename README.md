@@ -8,7 +8,7 @@ Nik Greb, Matt Mascavage, Owen Kim
 
 ## Coding Worksheet
 
-![Colab Worksheet](https://github.com/nikgreb/nikgreb.github.io/blob/main/images/Where'sSchueller.png)
+![Colab Worksheet]([https://github.com/nikgreb/NFLFirings/blob/main/Data_Science_Final_Project.ipynb])
 
 Put a link to the colab worksheet. (Download it from google and upload it to the github repository.)
 Put the contents of your report from Part II.
