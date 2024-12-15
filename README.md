@@ -7,7 +7,7 @@ Final Project for Professor Schueller's Intro to Data Science Class
 Nik Greb, Matt Mascavage, Owen Kim
 
 ## Coding Worksheet
-
+This is the worksheet that our group worked from for the data analysis of our project:
 ![Colab Worksheet](https://github.com/nikgreb/NFLFirings/blob/783adf0d989ee371a8b2313a0f4daec6a561c964/Data_Science_Final_Project.ipynb)
 
 
