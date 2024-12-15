@@ -1,6 +1,3 @@
-# Is it Worth it to Fire Your Coach in the NFL?
-Final Project for Professor Schueller's Intro to Data Science Class
-
 ## Group Members
 Nik Greb, Matt Mascavage, Owen Kim
 
