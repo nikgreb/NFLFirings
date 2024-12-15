@@ -3,7 +3,7 @@ Nik Greb, Matt Mascavage, Owen Kim
 
 ## Coding Worksheet
 This is the worksheet that our group worked from for the data analysis of our project:
-[Colab Worksheet](Data_Science_Final_Project.ipynb)
+[Colab Worksheet](https://github.com/nikgreb/NFLFirings/Data_Science_Final_Project.ipynb)
 
 ### Introduction
 We created our own custom data set by compiling statistics collected from a number of sources. The final data set contained the following info from the 2002 - 2023 NFL seasons (we chose this range because the 32nd team, the Texans, were added to the League in 2002):
